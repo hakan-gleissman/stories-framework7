@@ -1,0 +1,13 @@
+{
+  "name": "stories-framework7",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": { "framework7": "^9.3.0" },
+  "devDependencies": { "vite": "^6.4.1", "vite-plugin-pwa": "^1.0.0" }
+}

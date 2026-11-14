@@ -1,0 +1,9 @@
+{
+  "name": "Midas krönika",
+  "short_name": "Midas",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#efdfb7",
+  "theme_color": "#796342"
+}

@@ -1,0 +1,78 @@
+# Stories – Framework7
+
+En separat Framework7-version av sajten i `/Users/hakangleissman/stories`.
+Originalets tre sidor och berättelsetext har bevarats. En orörd kopia ligger i
+`original/`; den ursprungliga projektmappen har inte ändrats.
+
+## Starta lokalt
+
+Node.js 20.19+ eller 22+ och npm behövs.
+
+```sh
+npm ci
+npm run dev
+```
+
+Öppna adressen som Vite skriver ut. `npm run dev -- --port 5173` väljer en bestämd port.
+
+## Bygg och förhandsvisa
+
+```sh
+npm run build
+npm run preview
+```
+
+`dist/` innehåller statiska filer. Node behövs vid utveckling och bygge, inte på webbservern.
+PWA/service worker aktiveras i produktionsbygget, inte under vanlig utveckling.
+
+## Navigation och utseende
+
+- Framework7 Core (lite) sköter navigation, sidövergångar och tillbaka-svep.
+- Startsida → Grekisk mytologi → Kung Midas och åsneöronen.
+- Header och sidfot ligger kvar; bara innehållet i mitten animeras.
+- Headerns tillbaka-knapp uppdateras med aktuell föräldrasida och döljs på startsidan.
+- Tillbaka-knappen och logotypen fungerar även efter omladdning av en direktlänk.
+- Hashadresser (`#!/grekisk/`, `#!/midas/`) fungerar på statisk hosting.
+- Sidövergången är en horisontell `f7-push` på 850 ms med mjuk acceleration
+  och inbromsning. Tillbaka-svepets avslutning är 550 ms.
+  Ändra CSS-variablerna i `src/app.css` för att justera hastigheten.
+- Pergamentbilden har ersatts med en varm beige färgtoning enligt önskemål.
+- Typsnitt, färger, hero-bilder och hela berättelsen är från originalet.
+- iOS/Android-tema väljs automatiskt. Reducerad rörelse respekteras.
+- `src/pages.js`: sidinnehåll och routes.
+- `src/app.js`: appstart och navigationsinställningar.
+- `src/original.css`: grundstilen från sajten, med bildbakgrunden ersatt.
+- `src/app.css`: Framework7-anpassning, mobilmått, safe areas och animationstider.
+
+## PWA på iPhone och Android
+
+Publicera `dist/` via HTTPS. Öppna sajten i Safari på iPhone och välj
+Dela → Lägg till på hemskärmen → Öppna som webbapp (om valet visas).
+På Android används webbläsarens installationsval.
+
+Appens egna filer, all text och ikoner cachas för offlinebruk efter första
+lyckade besöket. Originalets hero-bilder och Google Fonts kommer fortfarande
+från externa adresser och cachas när de har hämtats; en helt ny installation
+behöver därför internet för dessa. Utan bilder/typsnitt finns färgbakgrund och
+reservtypsnitt så innehållet fortfarande går att läsa.
+
+## GitHub Pages
+
+1. Lägg detta projekt i ett eget GitHub-repository (projektmappens innehåll i repositoryts rot).
+2. Välj **Settings → Pages → Source → GitHub Actions**.
+3. Pusha till `main` eller kör workflowen manuellt.
+
+`.github/workflows/pages.yml` bygger och publicerar `dist/`. Den hämtar rätt
+basadress från GitHub Pages så även projektsökvägar som `/stories/` stöds.
+För lokalt bygge till en bestämd basadress:
+
+```sh
+BASE_PATH=/stories/ npm run build
+```
+
+Inget har publicerats eller pushats automatiskt under konverteringen.
+
+## App Store senare
+
+Det här projektet är en webbapp/PWA. En App Store-version kräver separat
+paketering med exempelvis Capacitor, plattformstestning och publicering.
