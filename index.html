@@ -45,10 +45,19 @@
       </header>
       <div class="view view-main"></div>
       <footer class="story-footer">
-        © 2026 <span class="footer-story-title">Stories</span>: myter och
-        berättelser
+        <button type="button" class="install-offer" hidden>Lägg till på hemskärmen</button>
+        <div>© 2026 <span class="footer-story-title">Stories</span>: myter och berättelser</div>
       </footer>
     </div>
+    <dialog class="install-dialog" aria-labelledby="install-heading" aria-describedby="install-description">
+      <h2 id="install-heading">Stories på hemskärmen</h2>
+      <p id="install-description"></p>
+      <ol class="install-steps"></ol>
+      <div class="install-actions">
+        <button type="button" data-install-close>Avbryt</button>
+        <button type="button" class="pergament-knapp" data-install-close>Jag förstår</button>
+      </div>
+    </dialog>
     <script type="module" src="/src/app.js"></script>
   </body>
 </html>

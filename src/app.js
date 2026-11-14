@@ -4,6 +4,7 @@ import './original.css';
 import './app.css';
 import { routes } from './pages';
 import { registerSW } from 'virtual:pwa-register';
+import './install.js';
 
 // A fresh deep link needs real parent entries so Back stays inside Stories.
 const basePath = window.location.pathname.replace(/index\.html$/, '');
