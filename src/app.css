@@ -78,6 +78,9 @@ html.md {
   min-width: 0;
 }
 .app-header .story-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   appearance: none;
   border: 0;
   background: none;
@@ -88,10 +91,12 @@ html.md {
   font:
     700 16px Georgia,
     serif;
+  line-height: 1;
 }
 .story-back span {
   font-size: 28px;
-  vertical-align: -2px;
+  line-height: 1;
+  transform: translateY(-2px);
 }
 .story-back:disabled {
   cursor: default;
@@ -230,3 +235,5 @@ main.startsida {
 .page[data-name="midas"] .pergament-text h1 + p::first-letter {
   font-size: 40px;
 }
+
+.app-header .story-back[hidden] { display: none; }
