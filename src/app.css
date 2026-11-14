@@ -190,7 +190,7 @@ main.startsida {
   font-size: 26px;
   font-weight: 400;
   -webkit-text-stroke: 0.6px currentColor;
-  text-shadow: 0 2px 3px rgb(35 24 12 / 65%);
+  text-shadow: 0 1px 2px rgb(35 24 12 / 40%);
   font-style: italic;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -207,4 +207,5 @@ main.startsida {
   font-weight: 400;
   -webkit-text-stroke: 0.6px currentColor;
   font-style: italic;
+  text-shadow: 0 1px 2px rgb(35 24 12 / 40%);
 }
