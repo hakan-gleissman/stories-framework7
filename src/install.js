@@ -5,7 +5,7 @@ const description = document.querySelector('#install-description');
 const steps = document.querySelector('.install-steps');
 const standalone = window.matchMedia('(display-mode: standalone)');
 const smallScreen = window.matchMedia('(max-width: 600px)');
-const storageKey = `stories:install-dismissed:${location.pathname.replace(/index\.html$/, '')}`;
+const storageKey = `stories:install-dismissed:v2:${location.pathname.replace(/index\.html$/, '')}`;
 let dismissed = false;
 let installPrompt = null;
 try { dismissed = localStorage.getItem(storageKey) === 'yes'; } catch { /* In-memory choice still works. */ }
@@ -40,6 +40,7 @@ function showInstructions() {
     description.textContent = 'Spara Stories på hemskärmen via webbläsarens meny.';
     instructions = ['iPhone: tryck på … bredvid adressfältet → Dela → Lägg till på hemskärmen. Om Dela redan syns kan du trycka direkt där.', 'Android: öppna webbläsarens meny och välj Installera app eller Lägg till på startskärmen.'];
   }
+  instructions.push('Öppna sedan sajten som en app via ikonen Stories på hemskärmen.');
   steps.replaceChildren(...instructions.map(text => {
     const item = document.createElement('li');
     item.textContent = text;
