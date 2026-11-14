@@ -37,6 +37,12 @@ body {
   font-style: normal;
 }
 
+.header-hand-written {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 a {
   font-weight: 700;
 }
