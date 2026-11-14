@@ -252,5 +252,5 @@ main.startsida {
 }
 .story-ornament-mirrored {
   transform: translateY(-4px) scaleX(-1);
-  margin-left: -2px;
+  margin-left: -3px;
 }
