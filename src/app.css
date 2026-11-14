@@ -184,10 +184,20 @@ main.startsida {
   }
 }
 
-/* Handwritten brand text; the surrounding symbols retain their own font. */
+/* A quiet, book-like wordmark in the shared header. */
 .story-title {
-  font-family: "Nothing You Could Do", cursive;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
+  font-family: "Old Standard TT", Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  -webkit-text-stroke: 0.6px currentColor;
+  text-shadow: 0 2px 3px rgb(35 24 12 / 65%);
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #f3e6c8;
+}
+
+/* Match the header wordmark on the hero titles; keep the story title plain. */
+.hero-text h1 {
+  text-shadow: 0 2px 3px rgb(35 24 12 / 65%);
 }
