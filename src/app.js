@@ -9,22 +9,26 @@ import { registerSW } from 'virtual:pwa-register';
 const basePath = window.location.pathname.replace(/index\.html$/, '');
 const requestedPath = window.location.hash.replace(/^#!/, '') || '/';
 const freshEntry = window.history.state?.storiesBase !== basePath;
-const initialParents = ['/midas/', '/eris/', '/sisyfos/'].includes(requestedPath) ? ['/grekisk/', requestedPath]
-  : requestedPath === '/grekisk/' ? ['/grekisk/'] : [];
+const initialParents = requestedPath === '/sisyfos/'
+  ? ['/grekisk/', '/fler-historier/', '/sisyfos/']
+  : ['/midas/', '/eris/', '/fler-historier/'].includes(requestedPath)
+    ? ['/grekisk/', requestedPath]
+    : requestedPath === '/grekisk/' ? ['/grekisk/'] : [];
 if (freshEntry) {
   window.history.replaceState({ ...window.history.state, storiesBase: basePath }, '',
     initialParents.length ? basePath : window.location.href);
 }
 
 const backButton = document.querySelector('.story-back');
-const parentRoutes = { index: null, grekisk: '/', midas: '/grekisk/', eris: '/grekisk/', sisyfos: '/grekisk/' };
+const parentRoutes = { index: null, grekisk: '/', midas: '/grekisk/', eris: '/grekisk/', sisyfos: '/fler-historier/', 'fler-historier': '/grekisk/' };
 function updateHeader(page, transitioning) {
   const parent = parentRoutes[page.el.dataset.name];
   backButton.hidden = parent == null;
   backButton.disabled = transitioning;
   backButton.dataset.target = parent || '/';
-  backButton.setAttribute('aria-label', parent === '/grekisk/'
-    ? 'Tillbaka till Grekisk mytologi' : 'Tillbaka till startsidan');
+  backButton.setAttribute('aria-label', parent === '/fler-historier/'
+    ? 'Tillbaka till Fler historier'
+    : parent === '/grekisk/' ? 'Tillbaka till Grekisk mytologi' : 'Tillbaka till startsidan');
 }
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -35,7 +39,6 @@ const app = new Framework7({
   routes,
   view: {
     animate: !reducedMotion.matches,
-    transition: 'f7-push',
     iosDynamicNavbar: false,
     iosSwipeBack: true,
     mdSwipeBack: true,
@@ -76,7 +79,10 @@ document.addEventListener('click', (event) => {
   if (back) {
     event.preventDefault();
     event.stopPropagation();
-    if (!back.disabled) mainView.router.back(back.dataset.target, { force: true });
+    if (!back.disabled) mainView.router.back(back.dataset.target, {
+      force: true,
+      transition: mainView.router.currentRoute.route.transition,
+    });
     return;
   }
   if (!event.target.closest('.story-home')) return;
