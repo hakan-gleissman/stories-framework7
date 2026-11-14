@@ -51,12 +51,22 @@ export const routes = [
   },
   {
     "path": "/fler-historier/",
-    "content": "<div class=\"page\" data-name=\"fler-historier\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero hero-grekland\">\n        <div class=\"hero-text\">\n          <h1>Fler historier</h1>\n          \n          <nav class=\"story-choices\" aria-label=\"Fler berättelser i grekisk mytologi\"><a class=\"pergament-knapp\" href=\"/sisyfos/\">Sisyfos och döden</a></nav>\n        </div>\n      </section>\n    </main></div></div>",
+    "content": "<div class=\"page\" data-name=\"fler-historier\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero hero-grekland\">\n        <div class=\"hero-text\">\n          <h1>Fler historier</h1>\n          \n          <nav class=\"story-choices\" aria-label=\"Fler berättelser i grekisk mytologi\"><a class=\"pergament-knapp\" href=\"/sisyfos/\">Sisyfos och döden</a><a class=\"pergament-knapp\" href=\"/atlas/\">Herakles och Atlas</a></nav>\n        </div>\n      </section>\n    </main></div></div>",
     "options": {
       "props": {
         "title": "Fler historier"
       }
     },
     "transition": "f7-cover-v"
+  },
+  {
+    "path": "/atlas/",
+    "content": "<div class=\"page story-page\" data-name=\"atlas\"><div class=\"page-content\" tabindex=\"-1\"><main><article class=\"pergament-text\"><h1>Herakles och Atlas</h1>\n<p>Herakles hade fått ett uppdrag: hämta <strong>gyllene äpplen från hesperidernas trädgård</strong>.</p>\n<p>Det lät som en enkel inköpslista. Problemet var att äpplena tillhörde gudarna och vaktades av en väldig drake.</p>\n<p>Därför sökte han upp <strong>Atlas</strong>, titanen som bar himlavalvet på sina axlar. Han höll alltså uppe himlen, även om han ofta avbildas med jordklotet.</p>\n<p>— Om du hämtar äpplena kan jag hålla himlen under tiden, föreslog Herakles.</p>\n<p>Atlas hade stått där väldigt länge och tackade gärna ja.</p>\n<p>De bytte försiktigt plats. Herakles tog tyngden på axlarna, och Atlas kunde äntligen gå iväg.</p>\n<p>Man kan föreställa sig hur han sträckte på ryggen:</p>\n<p><em>Jaha. Så här känns det att inte bära himlen.</em></p>\n<p>När Atlas återvände med tre gyllene äpplen hade han fått smak på ledigheten.</p>\n<p>— Jag kan leverera dem till kungen också, sade han. Du kan stå kvar här.</p>\n<p>Herakles anade att det kunde bli en mycket lång väntan. Men han kunde inte bara släppa himlen.</p>\n<p>— Visst, sade han. Men jag behöver något mjukt under bördan. <strong>Kan du hålla ett ögonblick medan jag ordnar en dyna?</strong></p>\n<p>Atlas lade ned äpplena och tog tillbaka himlen.</p>\n<p>Herakles plockade upp frukten och gick.</p>\n<p>— Dynan då? kan man föreställa sig Atlas ropa.</p>\n<p>Men Herakles var redan på väg. Atlas hade försökt smita från sitt evighetsarbete och blivit lurad av en begäran om bättre stoppning.</p></article></main></div></div>",
+    "options": {
+      "props": {
+        "title": "Herakles och Atlas"
+      }
+    },
+    "transition": "f7-push"
   }
 ];
