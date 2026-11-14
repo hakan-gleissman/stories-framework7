@@ -15,8 +15,8 @@ body { padding: 0; min-height: 0; }
 /* Keep the background cheap to paint while Framework7 moves the page. */
 .page { background: #e4d1ac; }
 html.ios, html.md {
-  --f7-page-transition-duration: 850ms;
-  --f7-page-push-transition-duration: 850ms;
+  --f7-page-transition-duration: 700ms;
+  --f7-page-push-transition-duration: 700ms;
   --f7-page-swipeback-transition-duration: 550ms;
 }
 /* Full-width horizontal push on every platform, with a gentle start and stop. */
