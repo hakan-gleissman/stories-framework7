@@ -21,7 +21,7 @@ export default defineConfig({
       ],
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,png,jpg,woff2}'],
+      globPatterns: ['**/*.{js,css,html,png,jpg,avif,woff2}'],
       runtimeCaching: [
         { urlPattern: /^https:\/\/fonts\.googleapis\.com\//, handler: 'StaleWhileRevalidate', options: { cacheName: 'stories-font-css' } },
         { urlPattern: /^https:\/\/fonts\.gstatic\.com\//, handler: 'CacheFirst', options: { cacheName: 'stories-fonts', expiration: { maxEntries: 12, maxAgeSeconds: 31536000 }, cacheableResponse: { statuses: [0, 200] } } },

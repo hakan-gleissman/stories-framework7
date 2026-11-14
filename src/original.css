@@ -123,7 +123,7 @@ main.startsida {
 
 /* Gemensam hero för båda sidorna */
 .hero {
-  --hero-image: url("https://blog.tcea.org/wp-content/uploads/2018/11/narrative-794978_1920-1170x658.jpg");
+  --hero-image: url("/media/bild.jpg");
 
   width: 100%;
   max-width: 1400px;
@@ -151,7 +151,7 @@ main.startsida {
 
 /* Grekiska sidan: samma mått, annan bild */
 .hero-grekland {
-  --hero-image: url("https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1920,h_1080,g_auto/f_auto/q_auto/v1/Greek-mythology-gettyImages-1220052224");
+  --hero-image: url("/media/bild2.avif");
 
   background-position: center 5%;
 }

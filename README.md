@@ -52,10 +52,9 @@ Dela → Lägg till på hemskärmen → Öppna som webbapp (om valet visas).
 På Android används webbläsarens installationsval.
 
 Appens egna filer, all text och ikoner cachas för offlinebruk efter första
-lyckade besöket. Originalets hero-bilder och Google Fonts kommer fortfarande
-från externa adresser och cachas när de har hämtats; en helt ny installation
-behöver därför internet för dessa. Utan bilder/typsnitt finns färgbakgrund och
-reservtypsnitt så innehållet fortfarande går att läsa.
+lyckade besöket. Båda hero-bilderna är lokala och cachas för offlinebruk. Google Fonts hämtas
+fortfarande från externa adresser och cachas när de har hämtats; utan dessa
+används reservtypsnitt.
 
 ## GitHub Pages
 
@@ -77,3 +76,8 @@ Inget har publicerats eller pushats automatiskt under konverteringen.
 
 Det här projektet är en webbapp/PWA. En App Store-version kräver separat
 paketering med exempelvis Capacitor, plattformstestning och publicering.
+
+Startsidan använder den lokala hero-bilden `public/media/bild.jpg` (1170 × 658 px).
+Den cachas tillsammans med appens övriga filer för offlinebruk.
+
+Grekisk mytologi använder den lokala AVIF-bilden `public/media/bild2.avif`.
