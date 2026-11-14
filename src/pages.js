@@ -10,7 +10,7 @@ export const routes = [
   },
   {
     "path": "/grekisk/",
-    "content": "<div class=\"page\" data-name=\"grekisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero hero-grekland\">\n        <div class=\"hero-text\">\n          <h1>Grekisk mytologi</h1>\n          <p>Berättelser om gudar, hjältar och uråldriga hemligheter</p>\n          <nav class=\"story-choices\" aria-label=\"Berättelser i grekisk mytologi\">\n            <a class=\"pergament-knapp\" href=\"/midas/\">Kungen med åsneöronen</a>\n            <a class=\"pergament-knapp\" href=\"/eris/\">Bröllopsgästen som ingen ville bjuda</a>\n            <a class=\"pergament-knapp\" href=\"/sisyfos/\">Sisyfos och döden</a>\n          </nav>\n        </div>\n      </section>\n    </main></div></div>",
+    "content": "<div class=\"page\" data-name=\"grekisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero hero-grekland\">\n        <div class=\"hero-text\">\n          <h1>Grekisk mytologi</h1>\n          <p>Berättelser om gudar, hjältar och uråldriga hemligheter</p>\n          <nav class=\"story-choices\" aria-label=\"Berättelser i grekisk mytologi\">\n            <a class=\"pergament-knapp\" href=\"/midas/\">Kungen med åsneöronen</a>\n            <a class=\"pergament-knapp\" href=\"/eris/\">Bröllopsgästen</a>\n            <a class=\"pergament-knapp\" href=\"/sisyfos/\">Sisyfos och döden</a>\n          </nav>\n        </div>\n      </section>\n    </main></div></div>",
     "options": {
       "props": {
         "title": "Grekisk mytologi"
