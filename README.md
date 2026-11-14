@@ -1,7 +1,7 @@
 # Stories – Framework7
 
 En separat Framework7-version av sajten i `/Users/hakangleissman/stories`.
-Originalets tre sidor och berättelsetext har bevarats. En orörd kopia ligger i
+Originalets sidor och berättelsetext har bevarats. Berättelsen om Eris har lagts till. En orörd kopia ligger i
 `original/`; den ursprungliga projektmappen har inte ändrats.
 
 ## Starta lokalt
@@ -28,15 +28,16 @@ PWA/service worker aktiveras i produktionsbygget, inte under vanlig utveckling.
 ## Navigation och utseende
 
 - Framework7 Core (lite) sköter navigation, sidövergångar och tillbaka-svep.
-- Startsida → Grekisk mytologi → Kung Midas och åsneöronen.
+- Startsida → Grekisk mytologi → Kung Midas och åsneöronen eller Bröllopsgästen som ingen ville bjuda.
 - Header och sidfot ligger kvar; bara innehållet i mitten animeras.
 - Headerns tillbaka-knapp uppdateras med aktuell föräldrasida och döljs på startsidan.
 - Tillbaka-knappen och logotypen fungerar även efter omladdning av en direktlänk.
-- Hashadresser (`#!/grekisk/`, `#!/midas/`) fungerar på statisk hosting.
+- Hashadresser (`#!/grekisk/`, `#!/midas/`, `#!/eris/`) fungerar på statisk hosting.
 - Sidövergången är en horisontell `f7-push` på 700 ms med mjuk acceleration
   och inbromsning. Tillbaka-svepets avslutning är 550 ms.
   Ändra CSS-variablerna i `src/app.css` för att justera hastigheten.
-- Pergamentbilden har ersatts med en varm beige färgtoning enligt önskemål.
+- Bakgrunden är en varm beige färgtoning utan bild.
+  Originalbilden i `original/media/` är oförändrad.
 - Typsnitt, färger, hero-bilder och hela berättelsen är från originalet.
 - iOS/Android-tema väljs automatiskt. Reducerad rörelse respekteras.
 - `src/pages.js`: sidinnehåll och routes.

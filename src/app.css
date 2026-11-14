@@ -20,8 +20,9 @@ body,
 body {
   padding: 0;
   min-height: 0;
+  background: linear-gradient(135deg, #eddfbf, #d5bc93);
 }
-/* Keep the background cheap to paint while Framework7 moves the page. */
+/* Each page has an opaque base during transitions. */
 .page {
   background: #e4d1ac;
 }
@@ -123,13 +124,13 @@ main.startsida {
   min-height: var(--story-hero-height);
 }
 /* Match the centred hero's top edge, even when the story is taller than the view. */
-.page[data-name="midas"] main {
+.page.story-page main {
   padding-top: max(
     var(--story-content-padding),
     calc((100cqh - var(--story-hero-height)) / 2)
   );
 }
-.page[data-name="midas"] .pergament-text {
+.page.story-page .pergament-text {
   margin-top: 0;
 }
 .story-footer {
@@ -167,7 +168,7 @@ main.startsida {
   .page-content main {
     padding: 18px 14px;
   }
-  .page[data-name="midas"] main {
+  .page.story-page main {
     padding-top: max(
       var(--story-content-padding),
       calc((100cqh - var(--story-hero-height)) / 2)
@@ -215,24 +216,24 @@ main.startsida {
   text-shadow: 0 1px 2px rgb(35 24 12 / 40%);
 }
 
-/* Quieter, more compact typography for the Midas narrative. */
-.page[data-name="midas"] .pergament-text p,
-.page[data-name="midas"] .pergament-text blockquote {
+/* Shared, compact typography for the stories. */
+.page.story-page .pergament-text p,
+.page.story-page .pergament-text blockquote {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.6;
   color: #51412b;
 }
-.page[data-name="midas"] .pergament-text p {
+.page.story-page .pergament-text p {
   margin-bottom: 12px;
 }
-.page[data-name="midas"] .pergament-text p:last-child {
+.page.story-page .pergament-text p:last-child {
   margin-bottom: 0;
 }
-.page[data-name="midas"] .pergament-text blockquote {
+.page.story-page .pergament-text blockquote {
   margin: 18px 0;
 }
-.page[data-name="midas"] .pergament-text h1 + p::first-letter {
+.page.story-page .pergament-text h1 + p::first-letter {
   font-size: 40px;
 }
 
@@ -253,4 +254,25 @@ main.startsida {
 .story-ornament-mirrored {
   transform: translateY(-4px) scaleX(-1);
   margin-left: -3px;
+}
+
+
+/* Compact story choices against the existing Greek illustration. */
+.story-choices {
+  width: min(100%, 360px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.story-choices .pergament-knapp {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 16px;
+  min-height: 44px;
+  font-size: 17px;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-wrap: balance;
 }
