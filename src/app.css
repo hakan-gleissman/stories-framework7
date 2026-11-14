@@ -278,11 +278,4 @@ main.startsida {
 }
 
 
-/* The next collection enters from below, at the same pace as the other views. */
-html.ios, html.md { --f7-page-cover-transition-duration: 700ms; }
-.router-transition-f7-cover-v-forward .page,
-.router-transition-f7-cover-v-backward .page {
-  animation-timing-function: cubic-bezier(.45, 0, .2, 1);
-  will-change: transform;
-}
 .page[data-name="fler-historier"] .hero-text h1 { margin-bottom: 28px; }

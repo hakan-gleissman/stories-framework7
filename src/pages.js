@@ -57,7 +57,7 @@ export const routes = [
         "title": "Fler historier"
       }
     },
-    "transition": "f7-cover-v"
+    "transition": "f7-push"
   },
   {
     "path": "/atlas/",
