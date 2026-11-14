@@ -9,7 +9,7 @@ import { registerSW } from 'virtual:pwa-register';
 const basePath = window.location.pathname.replace(/index\.html$/, '');
 const requestedPath = window.location.hash.replace(/^#!/, '') || '/';
 const freshEntry = window.history.state?.storiesBase !== basePath;
-const initialParents = ['/midas/', '/eris/'].includes(requestedPath) ? ['/grekisk/', requestedPath]
+const initialParents = ['/midas/', '/eris/', '/sisyfos/'].includes(requestedPath) ? ['/grekisk/', requestedPath]
   : requestedPath === '/grekisk/' ? ['/grekisk/'] : [];
 if (freshEntry) {
   window.history.replaceState({ ...window.history.state, storiesBase: basePath }, '',
@@ -17,7 +17,7 @@ if (freshEntry) {
 }
 
 const backButton = document.querySelector('.story-back');
-const parentRoutes = { index: null, grekisk: '/', midas: '/grekisk/', eris: '/grekisk/' };
+const parentRoutes = { index: null, grekisk: '/', midas: '/grekisk/', eris: '/grekisk/', sisyfos: '/grekisk/' };
 function updateHeader(page, transitioning) {
   const parent = parentRoutes[page.el.dataset.name];
   backButton.hidden = parent == null;
