@@ -11,7 +11,7 @@ export const routes = [
   },
   {
     "path": "/grekisk/",
-    "content": "<div class=\"page\" data-name=\"grekisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero hero-grekland\">\n        <div class=\"hero-text\">\n          <h1>Grekisk mytologi</h1>\n          <p>Berättelser om gudar, hjältar och uråldriga hemligheter</p>\n          <nav class=\"story-choices\" aria-label=\"Berättelser i grekisk mytologi\">\n            <a class=\"pergament-knapp\" href=\"/midas/\">Kungen med åsneöronen</a>\n            <a class=\"pergament-knapp\" href=\"/eris/\">Bröllopsgästen</a>\n            <a class=\"pergament-knapp\" href=\"/fler-historier/\">Visa fler historier</a>\n          </nav>\n        </div>\n      </section>\n    </main></div></div>",
+    "content": "<div class=\"page\" data-name=\"grekisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero hero-grekland\">\n        <div class=\"hero-text\">\n          <h1>Grekisk mytologi</h1>\n          <p>Berättelser om gudar och hjältar</p>\n          <nav class=\"story-choices\" aria-label=\"Berättelser i grekisk mytologi\">\n            <a class=\"pergament-knapp\" href=\"/midas/\">Kungen med åsneöronen</a>\n            <a class=\"pergament-knapp\" href=\"/eris/\">Bröllopsgästen</a>\n            <a class=\"pergament-knapp\" href=\"/fler-historier/\">Visa fler historier</a>\n          </nav>\n        </div>\n      </section>\n    </main></div></div>",
     "options": {
       "props": {
         "title": "Grekisk mytologi"
@@ -81,7 +81,7 @@ export const routes = [
   },
   {
     "path": "/zen/",
-    "content": "<div class=\"page\" data-name=\"zen\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-zen\"><div class=\"hero-text\"><h1>Zenberättelser</h1><p>Korta berättelser om tankar, närvaro och att släppa taget</p><nav class=\"story-choices\" aria-label=\"Zenberättelser\"><a class=\"pergament-knapp\" href=\"/de-tva-munkarna/\">De två munkarna</a></nav></div></section></main></div></div>",
+    "content": "<div class=\"page\" data-name=\"zen\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-zen\"><div class=\"hero-text\"><h1>Zenberättelser</h1><p>Historier om att vara närvarande i nuet</p><nav class=\"story-choices\" aria-label=\"Zenberättelser\"><a class=\"pergament-knapp\" href=\"/de-tva-munkarna/\">De två munkarna</a></nav></div></section></main></div></div>",
     "options": {
       "props": {
         "title": "Zenberättelser"
@@ -101,7 +101,7 @@ export const routes = [
   },
   {
     "path": "/kinesisk/",
-    "content": "<div class=\"page\" data-name=\"kinesisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Berättelser om äventyr, tankar och livet</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/sun-wukong/\">Apkungen och Buddha</a><a class=\"pergament-knapp\" href=\"/jagaren/\">Jägaren som glömde sig själv</a></nav></div></section></main></div></div>",
+    "content": "<div class=\"page\" data-name=\"kinesisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Äventyr och historier om tankar och annat</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/sun-wukong/\">Apkungen och Buddha</a><a class=\"pergament-knapp\" href=\"/jagaren/\">Jägaren som glömde sig själv</a></nav></div></section></main></div></div>",
     "options": {
       "props": {
         "title": "Kinesiska berättelser"
