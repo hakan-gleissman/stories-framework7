@@ -280,19 +280,24 @@ main.startsida {
 
 .page[data-name="fler-historier"] .hero-text h1 { margin-bottom: 28px; }
 
+.app-header-actions { display: flex; justify-content: flex-end; }
 .install-offer {
-  display: block;
-  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
-  margin: 0 auto 10px;
-  padding: 4px 8px;
-  border: 1px solid rgb(239 223 183 / 55%);
-  border-radius: 5px;
+  min-height: 28px;
+  margin: 0;
+  padding: 3px 5px;
+  border: 1px solid rgb(239 223 183 / 45%);
+  border-radius: 4px;
   background: transparent;
-  color: var(--parchment);
-  font: 400 14px/1.4 Georgia, serif;
+  color: #e5d8bb;
+  font: 400 12px/1.2 Georgia, serif;
+  white-space: nowrap;
   cursor: pointer;
 }
+.install-offer:hover { color: #fff5df; }
 .install-offer[hidden] { display: none; }
 .install-dialog {
   width: min(440px, calc(100% - 32px));
@@ -390,4 +395,10 @@ html.ios, html.md { --f7-page-fade-transition-duration: 550ms; }
 .hero-zen .hero-text h1,
 .hero-zen .hero-text p {
   text-shadow: 0 2px 3px rgb(0 0 0 / 70%);
+}
+
+@media (max-width: 360px) {
+  .app-header { grid-template-columns: 82px minmax(0, 1fr) 82px; }
+  .story-home { gap: 3px; }
+  .story-ornament { font-size: 18px; }
 }

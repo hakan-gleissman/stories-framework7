@@ -5,7 +5,7 @@ const description = document.querySelector('#install-description');
 const steps = document.querySelector('.install-steps');
 const standalone = window.matchMedia('(display-mode: standalone)');
 const smallScreen = window.matchMedia('(max-width: 600px)');
-const storageKey = `stories:install-dismissed:v2:${location.pathname.replace(/index\.html$/, '')}`;
+const storageKey = `stories:install-dismissed:v4:${location.pathname.replace(/index\.html$/, '')}`;
 let dismissed = false;
 let installPrompt = null;
 try { dismissed = localStorage.getItem(storageKey) === 'yes'; } catch { /* In-memory choice still works. */ }
@@ -31,16 +31,15 @@ function showInstructions() {
       'Tryck på … (de tre punkterna) bredvid adressfältet. Om Dela-knappen redan syns kan du trycka direkt på den.',
       'Välj Dela.',
       'Välj Lägg till på hemskärmen.',
-      'Aktivera Öppna som webbapp om valet visas och tryck på Lägg till.',
+      'Aktivera Öppna som webbapp om valet visas och tryck på Lägg till. Öppna sedan Stories via ikonen på hemskärmen.',
     ];
   } else if (android) {
     description.textContent = 'Lägg till Stories via webbläsarens meny om installationsrutan inte är tillgänglig.';
-    instructions = ['Öppna ⋮-menyn och välj Installera app eller Lägg till på startskärmen.', 'Bekräfta i webbläsarens ruta.'];
+    instructions = ['Öppna ⋮-menyn och välj Installera app eller Lägg till på startskärmen.', 'Bekräfta i webbläsarens ruta. Öppna sedan Stories via ikonen på hemskärmen.'];
   } else {
     description.textContent = 'Spara Stories på hemskärmen via webbläsarens meny.';
-    instructions = ['iPhone: tryck på … bredvid adressfältet → Dela → Lägg till på hemskärmen. Om Dela redan syns kan du trycka direkt där.', 'Android: öppna webbläsarens meny och välj Installera app eller Lägg till på startskärmen.'];
+    instructions = ['iPhone: tryck på … bredvid adressfältet → Dela → Lägg till på hemskärmen → Lägg till. Om Dela redan syns kan du trycka direkt där. Öppna sedan Stories via ikonen på hemskärmen.', 'Android: öppna webbläsarens meny och välj Installera app eller Lägg till på startskärmen. Bekräfta och öppna sedan Stories via ikonen på hemskärmen.'];
   }
-  instructions.push('Öppna sedan sajten som en app via ikonen Stories på hemskärmen.');
   steps.replaceChildren(...instructions.map(text => {
     const item = document.createElement('li');
     item.textContent = text;
@@ -78,6 +77,6 @@ button.addEventListener('click', async () => {
 dialog.querySelectorAll('[data-install-close]').forEach(control => {
   control.addEventListener('click', () => dialog.close());
 });
-// Both choices, as well as Escape, dismiss the invitation persistently.
+// Acknowledging the instructions or pressing Escape dismisses the invitation persistently.
 dialog.addEventListener('close', rememberChoice);
 updateOffer();

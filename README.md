@@ -84,8 +84,8 @@ Grekisk mytologi använder den lokala AVIF-bilden `public/media/bild2.avif`.
 
 ## Installationserbjudande
 
-På skärmar upp till 600 px visar sidfoten ”Lägg till på hemskärmen” tills användaren väljer Jag förstår,
-Avbryt eller svarar på webbläsarens installationsfråga. Valet sparas i localStorage
+På skärmar upp till 600 px visar headern ”Visa helskärm” tills användaren väljer Jag förstår
+eller svarar på webbläsarens installationsfråga. Valet sparas i localStorage
 per app-sökväg. Knappen döljs också i fristående app-läge.
 På iPhone visas en Safari-instruktion; själva installationen kräver delningsmenyn.
 Där `beforeinstallprompt` stöds används webbläsarens riktiga installationsruta.
