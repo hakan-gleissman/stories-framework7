@@ -106,3 +106,6 @@ Jägaren som glömde sig själv direkt. Tidigare underkategoriadresser leder hit
 
 Kinesiska berättelser använder `public/media/bild4.jpg` (900 × 600 px),
 med beskärning anpassad för desktop och mobil.
+
+Zenberättelser använder `public/media/bild5.webp` (1000 × 714 px),
+med beskärning anpassad för desktop och mobil. Bilden ingår i offlinecachen.

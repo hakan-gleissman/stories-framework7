@@ -81,7 +81,7 @@ export const routes = [
   },
   {
     "path": "/zen/",
-    "content": "<div class=\"page\" data-name=\"zen\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero\"><div class=\"hero-text\"><h1>Zenberättelser</h1><p>Korta berättelser om tankar, närvaro och att släppa taget</p><nav class=\"story-choices\" aria-label=\"Zenberättelser\"><a class=\"pergament-knapp\" href=\"/de-tva-munkarna/\">De två munkarna</a></nav></div></section></main></div></div>",
+    "content": "<div class=\"page\" data-name=\"zen\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-zen\"><div class=\"hero-text\"><h1>Zenberättelser</h1><p>Korta berättelser om tankar, närvaro och att släppa taget</p><nav class=\"story-choices\" aria-label=\"Zenberättelser\"><a class=\"pergament-knapp\" href=\"/de-tva-munkarna/\">De två munkarna</a></nav></div></section></main></div></div>",
     "options": {
       "props": {
         "title": "Zenberättelser"
