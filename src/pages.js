@@ -70,16 +70,6 @@ export const routes = [
     "transition": "f7-push"
   },
   {
-    "path": "/kinesisk-mytologi/",
-    "content": "<div class=\"page\" data-name=\"kinesisk-mytologi\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesisk mytologi</h1><p>Berättelser om odödliga, hjältar och magiska äventyr</p><nav class=\"story-choices\" aria-label=\"Berättelser i kinesisk mytologi\"><a class=\"pergament-knapp\" href=\"/sun-wukong/\">Apkungen och Buddha</a></nav></div></section></main></div></div>",
-    "options": {
-      "props": {
-        "title": "Kinesisk mytologi"
-      }
-    },
-    "transition": "f7-push"
-  },
-  {
     "path": "/sun-wukong/",
     "content": "<div class=\"page story-page\" data-name=\"sun-wukong\"><div class=\"page-content\" tabindex=\"-1\"><main><article class=\"pergament-text\"><h1>Apkungen och Buddha</h1>\n<p>Apkungen <strong>Sun Wukong satt mitt i Buddhas öppna handflata</strong>, med benen uppdragna och sin stav bredvid sig. Buddhas fingrar reste sig runt honom.</p>\n<p>Han hade ställt till ett väldigt bråk i himlen och påstod att han själv borde få vara härskare över hela himlen.</p>\n<p>Buddha hade erbjudit honom en tävling:</p>\n<p>— Om du kan ta dig ut ur min hand har du vunnit.</p>\n<p>Apkungen såg sig omkring. Han satt ju redan i handen. Allt han behövde göra var att hoppa över kanten.</p>\n<p>Han skrattade.</p>\n<p>— Du borde ha valt något svårare.</p>\n<p>Han reste sig i handflatan, stoppade undan staven och tog sats.</p>\n<p>Sedan hoppade han.</p>\n<p>Ett väldigt språng, långt ut genom himlen.</p>\n<p>Åtminstone kändes det så. Moln svepte förbi, vinden ven, och Apkungen blev genast upptagen av hur fort han färdades.</p>\n<p><em>Redan långt bort</em>, tänkte han. <em>Men jag kan komma mycket längre.</em></p>\n<p>Han fortsatte framåt på sitt magiska moln. Allt omkring honom tycktes flyta förbi i blått och vitt.</p>\n<p>Han tänkte inte längre på handen han hade suttit i.</p>\n<p><em>Ingen annan kan färdas så här fort. Buddha skulle bara veta!</em></p>\n<p>Till slut urskilde han <strong>fem jättelika, rosafärgade pelare</strong> som reste sig upp i dimman.</p>\n<p>Han stannade framför dem och tittade upp. Pelarna försvann så högt ovanför honom att han inte kunde se deras toppar.</p>\n<p>— Aha, sade han. Världens yttersta gräns!</p>\n<p>Det måste det vara. Han kunde inte föreställa sig något längre bort.</p>\n<p>Apkungen gick omkring och undersökte platsen, mycket nöjd med sig själv.</p>\n<p><em>Nu har jag visat vem som är störst och bäst. Men jag behöver ett bevis.</em></p>\n<p>Han drog loss ett hårstrå, blåste på det och förvandlade det till en pensel. På den mittersta pelaren skrev han med stora bokstäver:</p>\n<p><strong>APKUNGEN VAR HÄR.</strong></p>\n<p>Han backade ett par steg och beundrade sitt arbete.</p>\n<p>Sedan kände han att han behövde kissa.</p>\n<p>Han såg sig omkring. Ingen där.</p>\n<p>Så han kissade vid foten av en annan pelare.</p>\n<p>— Så där. Två bevis, sade han nöjt.</p>\n<p>Sedan vände han tillbaka. Han for genom dimman, förbi molnen, allt fortare — och plötsligt stod han framför Buddha igen, mitt i den öppna handflatan.</p>\n<p>— Jag vann! ropade han. Jag har varit vid världens slut! Nu får jag bestämma över himlen.</p>\n<p>Buddha såg lugnt på honom.</p>\n<p>— Du har inte lämnat min hand.</p>\n<p>Apkungen stirrade.</p>\n<p>— Jo! Jag färdades hur långt som helst. Jag såg fem väldiga pelare. Jag skrev på en av dem!</p>\n<p>— Titta på mitt långfinger.</p>\n<p>Apkungen vände sig om.</p>\n<p>Där stod:</p>\n<p><strong>APKUNGEN VAR HÄR.</strong></p>\n<p>Han läste orden.</p>\n<p>Sedan läste han dem igen.</p>\n<p>Han tittade på fingret, på nästa finger och på tummen.</p>\n<p>Fem fingrar.</p>\n<p>Fem pelare.</p>\n<p>Hans mun öppnades långsamt.</p>\n<p>Hela den väldiga färden, alla moln som hade svept förbi — ändå hade han blivit kvar inom Buddhas hand.</p>\n<p>Sedan kände han lukten.</p>\n<p>Han tittade ned mot tummen.</p>\n<p>— Åh, sade Apkungen.</p>\n<p>Det blev tyst.</p>\n<p>För första gången på mycket länge hade han ingenting att skryta om.</p>\n<p>Så tog han hastigt sats för att försöka igen.</p>\n<p>Men Buddha vände handen. De fem fingrarna blev till ett berg med fem toppar, och Apkungen fångades under det. Där fick han stanna en lång tid.</p>\n<p>Så kan man förirra sig i sina egna storslagna tankar — och bli så upptagen av hur viktig och bra man är att man inte märker att man försjunkit i tankar utan förankring i verkligheten.</p></article></main></div></div>",
     "options": {
@@ -111,17 +101,7 @@ export const routes = [
   },
   {
     "path": "/kinesisk/",
-    "content": "<div class=\"page\" data-name=\"kinesisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Mytologi och berättelser från Kina</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/kinesisk-mytologi/\">Kinesisk mytologi</a><a class=\"pergament-knapp\" href=\"/kinesiska-berattelser/\">Kinesiska berättelser</a></nav></div></section></main></div></div>",
-    "options": {
-      "props": {
-        "title": "Kinesiska berättelser"
-      }
-    },
-    "transition": "f7-push"
-  },
-  {
-    "path": "/kinesiska-berattelser/",
-    "content": "<div class=\"page\" data-name=\"kinesiska-berattelser\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Berättelser om tankar, uppmärksamhet och livet</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/jagaren/\">Jägaren som glömde sig själv</a></nav></div></section></main></div></div>",
+    "content": "<div class=\"page\" data-name=\"kinesisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Berättelser om äventyr, tankar och livet</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/sun-wukong/\">Apkungen och Buddha</a><a class=\"pergament-knapp\" href=\"/jagaren/\">Jägaren som glömde sig själv</a></nav></div></section></main></div></div>",
     "options": {
       "props": {
         "title": "Kinesiska berättelser"
@@ -138,5 +118,13 @@ export const routes = [
       }
     },
     "transition": "f7-push"
+  },
+  {
+    "path": "/kinesisk-mytologi/",
+    "redirect": "/kinesisk/"
+  },
+  {
+    "path": "/kinesiska-berattelser/",
+    "redirect": "/kinesisk/"
   }
 ];

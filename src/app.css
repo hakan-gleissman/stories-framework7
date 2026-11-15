@@ -320,10 +320,14 @@ main.startsida {
 }
 
 
-/* The Chinese collection reuses the local storybook image with a warmer tone. */
+/* Keep the sun in the desktop crop; centre the landscape on narrow screens. */
 .hero-kina {
-  --hero-image: url('/media/bild.jpg');
-  background-image: linear-gradient(rgb(55 23 22 / 55%), rgb(35 16 19 / 80%)), var(--hero-image);
+  --hero-image: url('/media/bild4.jpg');
+  background-image: linear-gradient(rgb(25 28 26 / 40%), rgb(25 28 26 / 70%)), var(--hero-image);
+  background-position: center top;
+}
+@media (max-width: 600px) {
+  .hero-kina { background-position: 55% center; }
 }
 
 /* Returning home through the brand fades out first, then fades the home view in. */

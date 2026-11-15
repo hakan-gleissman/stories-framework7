@@ -100,3 +100,9 @@ De två munkarna på `#!/de-tva-munkarna/`.
 Den kinesiska samlingen (`#!/kinesisk/`) har två underkategorier:
 Kinesisk mytologi (`#!/kinesisk-mytologi/`) med Apkungen och Buddha,
 och Kinesiska berättelser (`#!/kinesiska-berattelser/`) med Jägaren som glömde sig själv (`#!/jagaren/`).
+
+Kinesiska berättelser (`#!/kinesisk/`) listar nu Apkungen och Buddha samt
+Jägaren som glömde sig själv direkt. Tidigare underkategoriadresser leder hit.
+
+Kinesiska berättelser använder `public/media/bild4.jpg` (900 × 600 px),
+med beskärning anpassad för desktop och mobil.
