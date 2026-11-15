@@ -349,6 +349,45 @@ html.ios, html.md { --f7-page-fade-transition-duration: 550ms; }
 
 .hero-kina .hero-text h1,
 .hero-kina .hero-text p {
-  color: #fff8e8;
+  color: #eee1c6;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 45%);
+}
+
+.hero-grekland .hero-text h1,
+.hero-grekland .hero-text p {
+  color: #fff5df;
   text-shadow: 0 2px 4px rgb(0 0 0 / 85%);
+}
+
+/* Retain scroll/history without painting inactive page surfaces behind a transition. */
+.view-main > .page-previous,
+.view-main > .page-next {
+  visibility: hidden;
+}
+.view-main > .page-current,
+.view-main[class*="-forward"] > .page-next,
+.view-main[class*="-backward"] > .page-previous,
+.view-main > .page-swipeback-active,
+.view-main > .page-transitioning {
+  visibility: visible;
+}
+
+.page[data-name="index"] .hero-text h1,
+.page[data-name="index"] .hero-text p {
+  color: #fff5df;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 85%);
+}
+
+/* Keep both Greek collection headings at the same height, regardless of link count. */
+.hero-grekland {
+  align-items: flex-start;
+  padding-top: clamp(64px, 18dvh, 132px);
+}
+.hero-grekland .hero-text {
+  width: min(100%, 650px);
+}
+
+.hero-zen .hero-text h1,
+.hero-zen .hero-text p {
+  text-shadow: 0 2px 3px rgb(0 0 0 / 70%);
 }
