@@ -90,3 +90,6 @@ per app-sökväg. Knappen döljs också i fristående app-läge.
 På iPhone visas en Safari-instruktion; själva installationen kräver delningsmenyn.
 Där `beforeinstallprompt` stöds används webbläsarens riktiga installationsruta.
 I andra webbläsare visas instruktioner. Koden ligger i `src/install.js`.
+
+Kinesisk mytologi finns på `#!/kinesisk/` och länkar till Apkungen och Buddha
+på `#!/sun-wukong/`. Berättelsens fullständiga text finns i `src/pages.js`.

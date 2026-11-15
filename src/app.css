@@ -318,3 +318,10 @@ main.startsida {
 @media (min-width: 601px) {
   .install-offer { display: none; }
 }
+
+
+/* The Chinese collection reuses the local storybook image with a warmer tone. */
+.hero-kina {
+  --hero-image: url('/media/bild.jpg');
+  background-image: linear-gradient(rgb(55 23 22 / 55%), rgb(35 16 19 / 80%)), var(--hero-image);
+}
