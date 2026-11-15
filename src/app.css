@@ -28,8 +28,8 @@ body {
 }
 html.ios,
 html.md {
-  --f7-page-transition-duration: 700ms;
-  --f7-page-push-transition-duration: 700ms;
+  --f7-page-transition-duration: 550ms;
+  --f7-page-push-transition-duration: 550ms;
   --f7-page-swipeback-transition-duration: 550ms;
 }
 /* Full-width horizontal push on every platform, with a gentle start and stop. */

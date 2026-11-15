@@ -33,7 +33,7 @@ PWA/service worker aktiveras i produktionsbygget, inte under vanlig utveckling.
 - Headerns tillbaka-knapp uppdateras med aktuell föräldrasida och döljs på startsidan.
 - Tillbaka-knappen och logotypen fungerar även efter omladdning av en direktlänk.
 - Hashadresser (`#!/grekisk/`, `#!/midas/`, `#!/eris/`) fungerar på statisk hosting.
-- Sidövergången är en horisontell `f7-push` på 700 ms med mjuk acceleration
+- Sidövergången är en horisontell `f7-push` på 550 ms med mjuk acceleration
   och inbromsning. Tillbaka-svepets avslutning är 550 ms.
   Ändra CSS-variablerna i `src/app.css` för att justera hastigheten.
 - Bakgrunden är en varm beige färgtoning utan bild.
