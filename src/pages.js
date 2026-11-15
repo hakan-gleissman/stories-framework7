@@ -1,7 +1,7 @@
 export const routes = [
   {
     "path": "/",
-    "content": "<div class=\"page\" data-name=\"index\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero\">\n        <div class=\"hero-text\">\n          <h1>Myter och berättelser</h1>\n          <p>Gå in i en värld av historier och gamla sagor</p>\n          <nav class=\"story-choices\" aria-label=\"Mytologier\"><a class=\"pergament-knapp\" href=\"/grekisk/\">Grekisk mytologi</a><a class=\"pergament-knapp\" href=\"/kinesisk/\">Kinesisk mytologi</a><a class=\"pergament-knapp\" href=\"/zen/\">Zenberättelser</a></nav>\n        </div>\n      </section>\n    </main></div></div>",
+    "content": "<div class=\"page\" data-name=\"index\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero\">\n        <div class=\"hero-text\">\n          <h1>Myter och berättelser</h1>\n          <p>Gå in i en värld av historier och gamla sagor</p>\n          <nav class=\"story-choices\" aria-label=\"Kategorier\"><a class=\"pergament-knapp\" href=\"/grekisk/\">Grekisk mytologi</a><a class=\"pergament-knapp\" href=\"/kinesisk/\">Kinesiska berättelser</a><a class=\"pergament-knapp\" href=\"/zen/\">Zenberättelser</a></nav>\n        </div>\n      </section>\n    </main></div></div>",
     "options": {
       "props": {
         "title": "Stories"
@@ -70,8 +70,8 @@ export const routes = [
     "transition": "f7-push"
   },
   {
-    "path": "/kinesisk/",
-    "content": "<div class=\"page\" data-name=\"kinesisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesisk mytologi</h1><p>Berättelser om odödliga, hjältar och magiska äventyr</p><nav class=\"story-choices\" aria-label=\"Berättelser i kinesisk mytologi\"><a class=\"pergament-knapp\" href=\"/sun-wukong/\">Apkungen och Buddha</a></nav></div></section></main></div></div>",
+    "path": "/kinesisk-mytologi/",
+    "content": "<div class=\"page\" data-name=\"kinesisk-mytologi\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesisk mytologi</h1><p>Berättelser om odödliga, hjältar och magiska äventyr</p><nav class=\"story-choices\" aria-label=\"Berättelser i kinesisk mytologi\"><a class=\"pergament-knapp\" href=\"/sun-wukong/\">Apkungen och Buddha</a></nav></div></section></main></div></div>",
     "options": {
       "props": {
         "title": "Kinesisk mytologi"
@@ -105,6 +105,36 @@ export const routes = [
     "options": {
       "props": {
         "title": "De två munkarna"
+      }
+    },
+    "transition": "f7-push"
+  },
+  {
+    "path": "/kinesisk/",
+    "content": "<div class=\"page\" data-name=\"kinesisk\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Mytologi och berättelser från Kina</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/kinesisk-mytologi/\">Kinesisk mytologi</a><a class=\"pergament-knapp\" href=\"/kinesiska-berattelser/\">Kinesiska berättelser</a></nav></div></section></main></div></div>",
+    "options": {
+      "props": {
+        "title": "Kinesiska berättelser"
+      }
+    },
+    "transition": "f7-push"
+  },
+  {
+    "path": "/kinesiska-berattelser/",
+    "content": "<div class=\"page\" data-name=\"kinesiska-berattelser\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero hero-kina\"><div class=\"hero-text\"><h1>Kinesiska berättelser</h1><p>Berättelser om tankar, uppmärksamhet och livet</p><nav class=\"story-choices\" aria-label=\"Kinesiska berättelser\"><a class=\"pergament-knapp\" href=\"/jagaren/\">Jägaren som glömde sig själv</a></nav></div></section></main></div></div>",
+    "options": {
+      "props": {
+        "title": "Kinesiska berättelser"
+      }
+    },
+    "transition": "f7-push"
+  },
+  {
+    "path": "/jagaren/",
+    "content": "<div class=\"page story-page\" data-name=\"jagaren\"><div class=\"page-content\" tabindex=\"-1\"><main><article class=\"pergament-text\"><h1>Jägaren som glömde sig själv</h1>\n<p>Zhuangzi gick genom en kastanjelund när en stor fågel svepte förbi honom.</p>\n<p>Den flög så nära att vingen snuddade vid hans panna. Sedan slog den sig ned på en gren en bit bort.</p>\n<p>Zhuangzi stannade.</p>\n<p>Vilken märklig fågel. Så stora vingar, och ändå flög den nästan rakt in i honom. Så stora ögon, och ändå verkade den inte se sig för.</p>\n<p>Han tog fram sitt armborst och följde efter.</p>\n<p>Fågeln satt alldeles stilla.</p>\n<p>Zhuangzi smög närmare. Han lyfte armborstet, men innan han hann sikta såg han vad fågeln tittade på.</p>\n<p>På en gren framför den satt en bönsyrsa.</p>\n<p>Den hade lyft sina fångstben och lutade sig långsamt framåt.</p>\n<p>Framför bönsyrsan satt en cikada.</p>\n<p>Cikadan vilade i skuggan och tycktes inte märka någonting av det som pågick bakom den.</p>\n<p>Zhuangzi sänkte armborstet en aning.</p>\n<p>Nu förstod han.</p>\n<p>Cikadan var så upptagen av sin behagliga plats i skuggan att den inte såg bönsyrsan.</p>\n<p>Bönsyrsan var så upptagen av cikadan att den inte såg fågeln.</p>\n<p>Och fågeln var så upptagen av bönsyrsan att den inte såg honom.</p>\n<p>Alla hade fått syn på något de ville ha.</p>\n<p>Ingen såg vad som närmade sig bakifrån.</p>\n<p>Zhuangzi stod och betraktade dem. Han hade nästan glömt varför han höll ett armborst i händerna.</p>\n<p>Då hördes ett rop.</p>\n<p>— Du där! Vad gör du bland träden?</p>\n<p>Han ryckte till och vände sig om.</p>\n<p>Lundens vakt kom emot honom. Zhuangzi hade följt fågeln rakt in på någon annans mark utan att tänka på det.</p>\n<p>Han stoppade undan armborstet och skyndade därifrån.</p>\n<p>Först när han kommit ut ur lunden stannade han.</p>\n<p>Han tänkte på cikadan.</p>\n<p>Sedan på bönsyrsan.</p>\n<p>Sedan på fågeln.</p>\n<p>Han hade sett så tydligt hur var och en glömde sin omgivning när något fångade dess uppmärksamhet.</p>\n<p>Men i raden av ouppmärksamma varelser hade han missat en.</p>\n<p>Sig själv.</p></article></main></div></div>",
+    "options": {
+      "props": {
+        "title": "Jägaren som glömde sig själv"
       }
     },
     "transition": "f7-push"

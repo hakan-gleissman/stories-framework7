@@ -96,3 +96,7 @@ på `#!/sun-wukong/`. Berättelsens fullständiga text finns i `src/pages.js`.
 
 Zenberättelser finns på `#!/zen/` och länkar till den bearbetade berättelsen
 De två munkarna på `#!/de-tva-munkarna/`.
+
+Den kinesiska samlingen (`#!/kinesisk/`) har två underkategorier:
+Kinesisk mytologi (`#!/kinesisk-mytologi/`) med Apkungen och Buddha,
+och Kinesiska berättelser (`#!/kinesiska-berattelser/`) med Jägaren som glömde sig själv (`#!/jagaren/`).
