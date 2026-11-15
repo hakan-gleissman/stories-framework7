@@ -340,9 +340,9 @@ html.ios, html.md { --f7-page-fade-transition-duration: 550ms; }
 
 
 .hero-zen {
-  --hero-image: url('/media/bild5.webp');
+  --hero-image: url('/media/bild6.jpg');
   background-position: center 35%;
 }
 @media (max-width: 600px) {
-  .hero-zen { background-position: 48% center; }
+  .hero-zen { background-position: 70% center; }
 }
