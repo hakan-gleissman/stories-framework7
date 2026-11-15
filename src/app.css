@@ -325,3 +325,11 @@ main.startsida {
   --hero-image: url('/media/bild.jpg');
   background-image: linear-gradient(rgb(55 23 22 / 55%), rgb(35 16 19 / 80%)), var(--hero-image);
 }
+
+/* Returning home through the brand fades out first, then fades the home view in. */
+html.ios, html.md { --f7-page-fade-transition-duration: 550ms; }
+.router-transition-f7-fade-forward .page,
+.router-transition-f7-fade-backward .page {
+  animation-timing-function: ease-in-out;
+  will-change: opacity;
+}

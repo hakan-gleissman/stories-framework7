@@ -105,6 +105,9 @@ document.addEventListener('click', (event) => {
   event.preventDefault();
   event.stopPropagation();
   if (app.views.main.router.currentRoute.path === '/') return;
-  app.views.main.router.back('/', { force: true });
+  app.views.main.router.navigate('/', {
+    transition: 'f7-fade',
+    clearPreviousHistory: true,
+  });
 }, true);
 registerSW({ immediate: true });
