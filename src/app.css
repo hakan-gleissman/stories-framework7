@@ -323,7 +323,7 @@ main.startsida {
 /* Keep the sun in the desktop crop; centre the landscape on narrow screens. */
 .hero-kina {
   --hero-image: url('/media/bild4.jpg');
-  background-image: linear-gradient(rgb(25 28 26 / 40%), rgb(25 28 26 / 70%)), var(--hero-image);
+  background-image: linear-gradient(rgb(25 28 26 / 52%), rgb(25 28 26 / 70%)), var(--hero-image);
   background-position: center top;
 }
 @media (max-width: 600px) {
@@ -345,4 +345,10 @@ html.ios, html.md { --f7-page-fade-transition-duration: 550ms; }
 }
 @media (max-width: 600px) {
   .hero-zen { background-position: 70% center; }
+}
+
+.hero-kina .hero-text h1,
+.hero-kina .hero-text p {
+  color: #fff8e8;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 85%);
 }
