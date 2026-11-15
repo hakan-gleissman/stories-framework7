@@ -248,7 +248,8 @@ main.startsida {
   margin: 0 0 16px;
 }
 
-.pergament-text h1 + p::first-letter {
+.pergament-text h1 + p:not(.story-origin)::first-letter,
+.pergament-text .story-origin + p::first-letter {
   float: left;
   margin: 5px 8px 0 0;
   color: #695031;

@@ -233,7 +233,8 @@ main.startsida {
 .page.story-page .pergament-text blockquote {
   margin: 18px 0;
 }
-.page.story-page .pergament-text h1 + p::first-letter {
+.page.story-page .pergament-text h1 + p:not(.story-origin)::first-letter,
+.page.story-page .pergament-text .story-origin + p::first-letter {
   font-size: 40px;
 }
 
@@ -401,4 +402,15 @@ html.ios, html.md { --f7-page-fade-transition-duration: 550ms; }
   .app-header { grid-template-columns: 82px minmax(0, 1fr) 82px; }
   .story-home { gap: 3px; }
   .story-ornament { font-size: 18px; }
+}
+
+
+.page.story-page .pergament-text .story-origin {
+  margin: -8px 0 20px;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #604b32;
 }
