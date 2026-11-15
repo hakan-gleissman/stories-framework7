@@ -1,7 +1,7 @@
 export const routes = [
   {
     "path": "/",
-    "content": "<div class=\"page\" data-name=\"index\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero\">\n        <div class=\"hero-text\">\n          <h1>Myter och berättelser</h1>\n          <p>Gå in i en värld av historier och gamla sagor</p>\n          <nav class=\"story-choices\" aria-label=\"Mytologier\"><a class=\"pergament-knapp\" href=\"/grekisk/\">Grekisk mytologi</a><a class=\"pergament-knapp\" href=\"/kinesisk/\">Kinesisk mytologi</a></nav>\n        </div>\n      </section>\n    </main></div></div>",
+    "content": "<div class=\"page\" data-name=\"index\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\">\n      <section class=\"hero\">\n        <div class=\"hero-text\">\n          <h1>Myter och berättelser</h1>\n          <p>Gå in i en värld av historier och gamla sagor</p>\n          <nav class=\"story-choices\" aria-label=\"Mytologier\"><a class=\"pergament-knapp\" href=\"/grekisk/\">Grekisk mytologi</a><a class=\"pergament-knapp\" href=\"/kinesisk/\">Kinesisk mytologi</a><a class=\"pergament-knapp\" href=\"/zen/\">Zenberättelser</a></nav>\n        </div>\n      </section>\n    </main></div></div>",
     "options": {
       "props": {
         "title": "Stories"
@@ -85,6 +85,26 @@ export const routes = [
     "options": {
       "props": {
         "title": "Apkungen och Buddha"
+      }
+    },
+    "transition": "f7-push"
+  },
+  {
+    "path": "/zen/",
+    "content": "<div class=\"page\" data-name=\"zen\"><div class=\"page-content\" tabindex=\"-1\"><main class=\"startsida\"><section class=\"hero\"><div class=\"hero-text\"><h1>Zenberättelser</h1><p>Korta berättelser om tankar, närvaro och att släppa taget</p><nav class=\"story-choices\" aria-label=\"Zenberättelser\"><a class=\"pergament-knapp\" href=\"/de-tva-munkarna/\">De två munkarna</a></nav></div></section></main></div></div>",
+    "options": {
+      "props": {
+        "title": "Zenberättelser"
+      }
+    },
+    "transition": "f7-push"
+  },
+  {
+    "path": "/de-tva-munkarna/",
+    "content": "<div class=\"page story-page\" data-name=\"tva-munkar\"><div class=\"page-content\" tabindex=\"-1\"><main><article class=\"pergament-text\"><h1>De två munkarna</h1>\n<p>Regnet hade fallit hela förmiddagen. Vägen mellan byarna var full av pölar, och leran sög tag i sandalerna när de två munkarna Tanzan och Ekido gick fram.</p>\n<p>Vid en korsning stod en ung kvinna i sidenkimono. Framför henne bredde en stor, lerig vattenpöl ut sig. Hon tog ett steg åt ena hållet, ångrade sig och försökte hitta en torrare väg på den andra sidan.</p>\n<p>Det gick inte bättre där.</p>\n<p>Tanzan stannade.</p>\n<p>— Vill du ha hjälp över?</p>\n<p>Kvinnan nickade. Han lyfte upp henne, bar henne över den leriga sträckan och satte ned henne vid vägkanten. Hon rättade till sin kimono och tackade honom.</p>\n<p>Sedan gick de två munkarna vidare.</p>\n<p>Ekido var tyst.</p>\n<p>De passerade risfält där regndropparna slog små ringar i vattnet. Tanzan såg en fågel landa på en gärdsgårdsstolpe och stannade ett ögonblick för att rätta till sin sandal.</p>\n<p>Ekido tänkte på kvinnan.</p>\n<p>De gick genom en by. Någon hade tänt en eld under ett takutsprång, och det luktade våt ved.</p>\n<p>Ekido tänkte fortfarande på kvinnan.</p>\n<p>Tanzan hade inte tvekat ett ögonblick. Han hade bara lyft upp henne! Och sedan hade han gått vidare som om ingenting hade hänt.</p>\n<p>Framåt kvällen kom de till templet där de skulle övernatta. De ställde ifrån sig sina packningar och tog av sig de leriga sandalerna.</p>\n<p>Då kunde Ekido inte hålla sig längre.</p>\n<p>— Jag måste fråga dig om det som hände vid vägen.</p>\n<p>Tanzan såg upp.</p>\n<p>— Vad tänker du på?</p>\n<p>— Kvinnan! Du bar henne över leran.</p>\n<p>— Ja, sade Tanzan. Hon kom inte över.</p>\n<p>Ekido drog efter andan.</p>\n<p>— Men vi är munkar. Vi ska vara försiktiga med närheten till kvinnor. Och hon var ung och vacker också. Ändå lyfte du upp henne utan att ens fundera!</p>\n<p>Tanzan satt tyst en stund och såg på sin följeslagare.</p>\n<p>Sedan sade han:</p>\n<p>— Jag satte ned henne vid vägkanten, efter att ha burit henne en kort bit. Men du verkar fortfarande bära henne med dig.</p></article></main></div></div>",
+    "options": {
+      "props": {
+        "title": "De två munkarna"
       }
     },
     "transition": "f7-push"

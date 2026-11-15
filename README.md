@@ -93,3 +93,6 @@ I andra webbläsare visas instruktioner. Koden ligger i `src/install.js`.
 
 Kinesisk mytologi finns på `#!/kinesisk/` och länkar till Apkungen och Buddha
 på `#!/sun-wukong/`. Berättelsens fullständiga text finns i `src/pages.js`.
+
+Zenberättelser finns på `#!/zen/` och länkar till den bearbetade berättelsen
+De två munkarna på `#!/de-tva-munkarna/`.

@@ -10,7 +10,10 @@ import './install.js';
 const basePath = window.location.pathname.replace(/index\.html$/, '');
 const requestedPath = window.location.hash.replace(/^#!/, '') || '/';
 const freshEntry = window.history.state?.storiesBase !== basePath;
-const initialParents = requestedPath === '/sun-wukong/'
+const initialParents = requestedPath === '/de-tva-munkarna/'
+  ? ['/zen/', requestedPath]
+  : requestedPath === '/zen/' ? ['/zen/']
+  : requestedPath === '/sun-wukong/'
   ? ['/kinesisk/', requestedPath]
   : requestedPath === '/kinesisk/' ? ['/kinesisk/']
   : ['/sisyfos/', '/atlas/'].includes(requestedPath)
@@ -24,13 +27,15 @@ if (freshEntry) {
 }
 
 const backButton = document.querySelector('.story-back');
-const parentRoutes = { index: null, grekisk: '/', midas: '/grekisk/', eris: '/grekisk/', sisyfos: '/fler-historier/', atlas: '/fler-historier/', 'fler-historier': '/grekisk/', kinesisk: '/', 'sun-wukong': '/kinesisk/' };
+const parentRoutes = { index: null, grekisk: '/', midas: '/grekisk/', eris: '/grekisk/', sisyfos: '/fler-historier/', atlas: '/fler-historier/', 'fler-historier': '/grekisk/', kinesisk: '/', 'sun-wukong': '/kinesisk/', zen: '/', 'tva-munkar': '/zen/' };
 function updateHeader(page, transitioning) {
   const parent = parentRoutes[page.el.dataset.name];
   backButton.hidden = parent == null;
   backButton.disabled = transitioning;
   backButton.dataset.target = parent || '/';
-  backButton.setAttribute('aria-label', parent === '/kinesisk/'
+  backButton.setAttribute('aria-label', parent === '/zen/'
+    ? 'Tillbaka till Zenberättelser'
+    : parent === '/kinesisk/'
     ? 'Tillbaka till Kinesisk mytologi'
     : parent === '/fler-historier/'
     ? 'Tillbaka till Fler historier'
